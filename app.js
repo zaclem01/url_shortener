@@ -4,12 +4,6 @@ var app = express();
 var port = process.env.PORT || 8080;
 var dbUrl = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/url_shortener';
 
-if (dbUrl === 'mongodb://localhost:27017/url_shortener') {
-	console.log('connected to localhost')
-} else {
-	console.log('connected to mLab')
-}
-
 mongoose.connect(dbUrl, (err) => {
 	if (err) {
 		console.error('connection error:', err);
