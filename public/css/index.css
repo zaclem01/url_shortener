@@ -1,0 +1,70 @@
+/*
+========Header========
+*/
+h1 {
+	background: #5F5F5F;
+	color: white;
+	margin-top: 0;
+	padding: 20px 0;
+	text-align: center;
+}
+
+/*
+=========Body=========
+*/
+h3, ul {
+	width: 70%;
+	margin: 10px auto 0 auto;
+}
+
+code {
+	background: #f1f1f1;
+}
+
+ul {
+	list-style-type: square;
+}
+
+li {
+	margin-top: 10px;
+}
+
+
+/*
+========Footer========
+*/
+.footer {
+	position: fixed;
+	bottom: 0;
+	background: #5F5F5F;
+	height: 50px;
+	width: 100%;
+}
+
+.footer .copyright, .footer .developer {
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	top: 20px;
+}
+
+.footer .developer {
+	left: 10px;
+}
+
+.footer .copyright {
+	right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+	.footer {
+		text-align: center;
+	}
+	.footer .developer {
+		margin-top: 10px;
+	}
+	.footer .copyright, .footer .developer {
+		position: static;
+		display: block;
+	}
+}

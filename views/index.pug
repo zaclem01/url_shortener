@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		link(rel='stylesheet', type='text/css', href='css/normalize.css')
+		link(rel='stylesheet', type='text/css', href='css/index.css')
+		title URL Shortener
+	body
+		h1 URL Shortener API: FCC Project
+		h3 Instructions:
+		ul
+			li Use #[code https://url-shortener-fcc2089.herokuapp.com/urls/new/&lt;your_url&gt;] to create a shortened URL
+			li Use #[code https://url-shortener-fcc2089.herokuapp.com/urls/&lt;shortened_url&gt;] to go to that URL
+			li Use #[code https://url-shortener-fcc2089.herokuapp.com/urls] to see the last 10 URLs added
+		h3 Examples:
+		ul
+			li #[code https://url-shortener-fcc2089.herokuapp.com/urls/new/google.com] yields #[code { shortened_url: '1346', full_url: 'google.com' }]
+			li #[code https://url-shortener-fcc2089.herokuapp.com/urls/1346] takes you to #[code google.com]
+		div.footer
+			span.developer
+				small Developed by Zachary Clemans
+			span.copyright
+				small Copyright &copy; 2016 Zachary Clemans
