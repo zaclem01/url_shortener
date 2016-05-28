@@ -2,10 +2,11 @@ var express = require('express');
 var mongoose = require('mongoose');
 var app = express();
 var port = process.env.PORT || 8080;
+var dbUrl = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/url_shortener';
 
-mongoose.connect('mongodb://localhost:27017/url_shortener', (err) => {
+mongoose.connect(dbUrl, (err) => {
 	if (err) {
-		console.log('connection error:', err);
+		console.error('connection error:', err);
 	} else {
 		console.log('successfully connected to db');
 	}
